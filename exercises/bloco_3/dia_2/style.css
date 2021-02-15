@@ -1,32 +1,39 @@
-h1 {
-  font-size: 65px;
-  color: orange;
-  font-family: sans-serif;
-  text-decoration: none;
-  text-align: center;
+h1#h1part1 {
+  font-size: 65px; 
+  color:orange;
+
 }
-ul {
-  background-color: blue;
-}
-.text-list {
-  background-color: blueviolet;
-}
+
 p {
   font-weight: 600;
   font-size: 3em;
+  font-style: italic;
+}
+
+h1#h1part2 {
+  font-family: sans-serif;
   text-align: center;
-  line-height:60px
-  font-style: normal;
+  line-height: 1;
+  text-decoration: underline;
 }
 body {
   font-size: 16px;
 }
+
 #yellow {
-  color:yellow;
+  background-color: yellow;
 }
+
 #red {
-  color:red;
+  background-color: red;
 }
+
 #brown {
-  color:brown;
+  background-color: brown;
+}
+li {
+  background-color: blue;
+}
+.cor {
+  background-color: red;
 }
