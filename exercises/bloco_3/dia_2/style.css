@@ -1,0 +1,32 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+ul {
+  background-color: blue;
+}
+.text-list {
+  background-color: blueviolet;
+}
+p {
+  font-weight: 600;
+  font-size: 3em;
+  text-align: center;
+  line-height:60px
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+}
+#yellow {
+  color:yellow;
+}
+#red {
+  color:red;
+}
+#brown {
+  color:brown;
+}
