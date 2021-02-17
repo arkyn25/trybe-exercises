@@ -24,13 +24,12 @@ li {
   font-size: 20px;
 }
 
-.p1, .p2, .p3 {
-  color:blue;
+ul:nth-last-of-type(2) li:nth-child(-n+3){
+  color: blue;
 }
 
-.p2, .p3 {
-  background-color: pink;
-}
+ul:nth-of-type(1) li:nth-of-type(2), ul:nth-of-type(1)  li:nth-of-type(3){
+  background-color: pink;}
 
 .stack:hover {
   font-weight: bold;
