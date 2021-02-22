@@ -1,0 +1,27 @@
+div:hover {
+  border-style: solid;
+}
+
+div, h3 {
+  padding: 3px;
+}
+div:nth-child(3) {
+  color:aqua;
+}
+div:nth-child(4) {
+  color:blueviolet;
+}
+div:nth-child(5) {
+  color:brown;
+  font-size: 20px;
+}
+div:nth-child(6) {
+  color:cadetblue;
+}
+div:nth-child(7) {
+  color:darkgoldenrod;
+}
+
+div:nth-of-type(2n+1) h3 {
+  font-style: italic;
+}
