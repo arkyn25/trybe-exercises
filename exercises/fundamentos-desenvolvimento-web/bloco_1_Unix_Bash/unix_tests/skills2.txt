@@ -1,0 +1,8 @@
+- Internet
+- unix
+- Bash
+- JavaScript
+- React
+- CSS
+- HTML
+- Git & Github

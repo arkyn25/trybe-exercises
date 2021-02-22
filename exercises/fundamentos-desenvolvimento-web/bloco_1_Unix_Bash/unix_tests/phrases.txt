@@ -1,0 +1,5 @@
+- Arvore
+- Doce
+- Pizza
+- Carro
+- Pais
