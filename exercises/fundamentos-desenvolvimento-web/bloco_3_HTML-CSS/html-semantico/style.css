@@ -168,26 +168,30 @@ footer {
     background-color: rgb(61, 98, 167);
     bottom: 0;
     text-align: center;
-    padding: 5px 5px;
+    padding: 0px 5px;
     font-style: italic;
     width: 100%;
     position:fixed;
 }
 
 a {
-    color: rgb(4, 55, 68);
-    text-decoration: none;
+    color:antiquewhite ;
+}
+
+.ref {
+    color: black;
 }
 
 a:hover {
-    text-decoration: underline;   
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 20px;
+    padding:2px;
+    border:1px solid;
 }
-#ref {
-    text-align: center;
-    font-size: 40px;
-}
-section.ref {
-    padding-bottom: 20px;
+
+div.referencias {
+    margin-bottom: 20px;
+    display:block;
 }
 aside {
     float: right;
