@@ -171,6 +171,7 @@ footer {
     padding: 5px 5px;
     font-style: italic;
     width: 100%;
+    position:fixed;
 }
 
 a {
