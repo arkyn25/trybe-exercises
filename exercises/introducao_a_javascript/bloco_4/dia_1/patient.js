@@ -19,3 +19,12 @@ console.log(typeof patientAge);
 //Experimente também trocar o valor de patientId = 50 para patientId = '50' . Execute novamente um console.log()
 let patientId = "50";
 console.log(typeof patientId);
+
+//retangulo
+const base = 8;
+const altura = 5;
+let area;
+let perimetro;
+area = (base *altura);
+console.log("Area: "+ area);
+console.log("Perimetro: " + perimetro);
