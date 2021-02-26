@@ -1,5 +1,5 @@
 //exercicio 11
-let salarioBruto = 3000;
+let salarioBruto = 1910;
 let salarioBase;
 let salarioLiquido;
 let valorIR;
