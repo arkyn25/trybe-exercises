@@ -5,6 +5,8 @@ for (let i = 0; i < numbers.length; i +=1) {
   valor += numbers[i];
 }
 
+valor = valor / numbers.length;
+
 if (valor > 20) {
   console.log("Valor maior que 20")
 }
