@@ -6,4 +6,4 @@ for (let i = 0; i < numbers.length; i+=1) {
   media+=numbers[i];
 }
 console.log(`Media aritimetica: ${media / numbers.length}`);
-//
+//--
