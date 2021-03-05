@@ -59,70 +59,85 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
       const elementH1 = document.createElement('h1');
-      elementH1.innerHTML = "Exercicio 5.2 - JavaScript DOM"
+      elementH1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(elementH1);
 
+      // Exercise - 2
       const elementDivMain = document.createElement('div');
-      elementDivMain.className = "main-content"
+      elementDivMain.className = 'main-content';
       document.body.appendChild(elementDivMain);
 
+      // Exercise - 3
       const elementDivCenter = document.createElement('div');
-      elementDivCenter.className = "center-content";
+      elementDivCenter.className = 'center-content';
       elementDivMain.appendChild(elementDivCenter);
 
+      // Exercise - 4
       const paragraph = document.createElement('p');
-      paragraph.innerText = "Hello World!";
+      paragraph.innerHTML = 'Texto Show';
+      elementDivCenter.appendChild(paragraph);
 
-      const elementLeftContent = document.createElement('div');
-      elementLeftContent.className = "left-content";
-      elementDivMain.appendChild(elementLeftContent);
+      // Exercise - 5
+      const elementDivLeft = document.createElement('div');
+      elementDivLeft.className = 'left-content';
+      elementDivMain.appendChild(elementDivLeft);
 
-      const elementRightContent = document.createElement('div');
-      elementRightContent.className = "right-content";
-      elementDivMain.appendChild(elementRightContent);
+      // Exercise - 6
+      const elementDivRight = document.createElement('div');
+      elementDivRight.className = 'right-content';
+      elementDivMain.appendChild(elementDivRight);
 
+      // Exercise - 7
       const elementImg = document.createElement('img');
-      elementImg.className = "small-image";
+      elementImg.className = 'small-image';
       elementImg.src = 'https://picsum.photos/200';
-      elementLeftContent.appendChild(elementImg);
+      elementDivLeft.appendChild(elementImg);
 
-      
+      // Exercise - 8
       const elementUl = document.createElement('ul');
       elementDivRight.appendChild(elementUl);
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
-      for (let num in arrayNumbers) {
+    for (let num in arrayNumbers) {
       const elementLi = document.createElement('li');
       elementLi.innerHTML = arrayNumbers[num];
       elementUl.appendChild(elementLi);
-      }
-      
+    }
+
+      // Exercise - 9
       for (let index = 1; index <= 3; index++) {
-      const elementH3 = document.createElement('h3');
-      elementH3.innerHTML = 'Show ' + index;
-      elementDivMain.appendChild(elementH3);
-      } 
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show ' + index;
+        elementDivMain.appendChild(elementH3);
+      }
 
-      // segunda parte
+      // Segunda Parte
 
+
+      // Exercise 1
       const title = document.getElementsByTagName('h1')[0];
       title.className = 'title';
 
-      const elementH3 = document.getElementsByTagName('h3');
+      // Exercise 2
+      const elementsH3 = document.getElementsByTagName('h3');
       for (let index = 0; index < 3; index++) {
-        elementH3[index].className = 'description'
+        elementsH3[index].className = 'description';
       }
 
+      // Exercise 3
       const divLeftContent = document.getElementsByClassName('left-content')[0];
       elementDivMain.removeChild(divLeftContent);
 
-      const divRightContent = document.getElementsByClassName('right-content');
-      divRightContent.style.marginRight = 'auto';
+      // Exercise 4
+      const divRightContent = document.getElementsByClassName('right-content')[0];
+      divRightContent.style.marginRight='auto';
 
-      const divCenterContent = document.className('center-content');
-      divCenterContent.parentNode.style.backgroundColor = 'green';
+      // Exercise 5
+    const divCenterContent = document.getElementsByClassName('center-content')[0];
+    divCenterContent.parentNode.style.backgroundColor = 'green';
 
-      elementUl.lastChild.remove();
-      elementUl.lastChild.remove();
+      // Exercise 6
+    elementUl.lastChild.remove();
+    elementUl.lastChild.remove();
     </script>
   </body>
 </html>
