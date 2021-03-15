@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <header class="form-header">
+    <h1>Formulario para cadastro de curriculo</h1>
+    <p>Preencha os campos abaixo</p>
+  </header>
+  <form id="cv-form">
+    <div class="form-row">
+      <fieldset>
+        <div class="line-content">
+          <label for="name">Nome:</label>
+          <input type="text" name="texto" id="name" maxlength="40" required>
+        </div>
+        <div class="line-content">
+          <label for="email">Endereco de e-mail:</label>
+          <input type="email" name="email" id="email" maxlength="50" required>
+        </div>
+        <div class="line-content">
+          <label for="cpf-number">CPF:</label>
+          <input type="text" name="cpf" id="cpf-number" maxlength="11">
+        </div>
+        <div class="line-content">
+          <label for="adress">Endereco:</label>
+          <input type="text" name="adress" id="adress" maxlength="200" required>
+        </div>
+        <div class="line-content">
+          <label for="city">Cidade:</label>
+          <input type="text" name="city" id="city" maxlength="28" required>
+        </div>
+        <div class="line-content">
+          <label for="state">Estado:</label>
+          <select name="state" id="state" value="" required></select>
+        </div>
+        <div class="line-content">
+          <label for="house-apartment">Tipo de imovel:</label>
+          <input type="radio" name="house-apartment" id="house" value="house" required> <span>Casa</span>
+          <input type="radio" name="house-apartment" id="apartment" value="apartment" required> <span>Apartamento</span>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="line-content">
+          <label for="cv-resume">Resumo do curriculo</label>
+          <textarea name="cv-resume" id="cv-resume" cols="100" rows="20" maxlength="1000" required></textarea>
+        </div>
+        <div class="line-content">
+          <label for="position">Cargo</label>
+          <input type="text" name="position" id="position" maxlength="40" required>
+        </div>
+        <div class="line-content">
+          <label for="description">Deascricao do cargo</label>
+          <input type="text" name="description" id="description" maxlength="500" required>
+        </div>
+        <div class="line-content">
+          <label for="start-date">Data de inicio</label>
+          <input type="text" class="input-data" name="start-date" value="" required>
+        </div>
+      </fieldset>
+      <button class="submit-button" type="button">Enviar</button>
+      <button class="clear-button" type="button">Limpar</button>
+    </div>
+  </form>
+  <section class="form-data"></section>
+  <script src="script.js"></script>
+</body>
+</html>
