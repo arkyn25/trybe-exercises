@@ -1,4 +1,3 @@
-// script.js
 const states = document.getElementById('state');
 function createStateOptions() {
   const stateOptions = ['Selecione seu estado', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
@@ -46,6 +45,35 @@ function checkEmail() {
   return emailFormat
 }
 
+let input = document.querySelectorAll('.input-data')[0];
+
+var dateInputMask = function dateInputMask(elm) {
+  elm.addEventListener('keypress', function(e) {
+    if(e.keyCode < 47 || e.keyCode > 57) {
+      e.preventDefault();
+    }
+    
+    var len = elm.value.length;
+    // If we're at a particular place, let the user type the slash
+    // i.e., 12/12/1212
+    if(len !== 1 || len !== 3) {
+      if(e.keyCode == 47) {
+        e.preventDefault();
+      }
+    }
+    // If they don't add the slash, do it for them...
+    if(len === 2) {
+      elm.value += '/';
+    }
+    // If they don't add the slash, do it for them...
+    if(len === 5) {
+      elm.value += '/';
+    }
+  });
+};
+  
+dateInputMask(input);
+
 function renderCurriculum(event) {
   event.preventDefault();
   const formElements = document.querySelectorAll('input');
@@ -75,6 +103,10 @@ function clearFields() {
     textArea.value = '';
     div[index].innerText = '';
   }
+}
+
+function myFunction() {
+  document.getElementById("myForm").reset();
 }
 
 const submitButton = document.querySelector('.submit-button');
