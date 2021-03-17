@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-curriculo</title>
+    
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
+  </head>
+<body>
+  <section class="section has-text-centered" >
+    <header class="">
+      <h1 class="title">Formulário para cadastro de currículo</h1>
+      <p class="subtitle">Preencha os campos abaixo.</p>
+    </header>
+  </section>
+  <hr>
+  <form action="" method="" id="myForm" class="">
+    <div class="field">
+      <fieldset>
+        <div class="control">
+          <label class="label" for="name">Nome: 
+          <input class="input" type="text" class="" name="name" id="name" maxlength="40" required>
+          </label>
+          <label class="label" for="email">Endereço de e-mail:
+          <input class="email-input input" type="email" name="email" id="email" maxlength="50" required>
+          </label>
+          <label class="label" for="cpf-number">CPF: 
+          <input class="input" type="text" name="cpf" id="cpf-number" maxlength="11" required>
+          </label>
+          <label class="label" for="address">Endereço:
+          <input class="input" type="text" name="address" id="address" maxlength="200" required>
+          </label>
+          <label class="label" for="city">Cidade: 
+          <input class="input" type="text" name="city" id="city" maxlength="200" required>
+        </label>
+        <div>
+          <div>
+            <label class="label" for="state">Estado:
+              <div class="select is-rounded is-small">
+                <select name="state" id="state" value = "" required>
+                </select>
+              </div>
+          </div>
+        </div>
+          
+        </label>
+          <label class="radio" for="house-apartment">Tipo de imóvel: </label>
+          <input class="radio" type="radio" name="house-apartment" id="house" value="house" required> <span>Casa</span>
+          <input class="radio" type="radio" name="house-apartment" id="apartment" value="apartment" required > <span>Apartamento</span>
+    
+      </div>
+      <p class="label">
+      <div class="field">
+        <div class="control">
+          <label class="label" for="cv-resume">Resumo do currículo:</label>
+          <br>
+          <textarea class="textarea is-small" id="cv-resume" name="cv-resume" maxlength="500" cols="50" rows="5" required></textarea>
+         <br>
+          <label class="label" for="position">Cargo: 
+          <input class="input" type="text" name="position" id="position" maxlength="40" required >
+          </label>
+          <label class="label" for="description">Descrição do cargo: 
+          <input class="input" type="text" id="description" name="description" required>
+          </label>
+          <label class="label" for="start-date">Data de início: 
+          <input type="text" class="input-data input" placeholder="dd/mm/aaaa" id="datepicker" name="start-date" maxlength="10" value="" required>
+          </label>
+      </div>
+    </p>
+      <div class="buttons is-centered">
+        <button class="submit-button button is-success" type="button">Enviar</button>
+        <button class="clear-button button is-warning " type="reset">Limpar</button>
+        <input type="button" class="button is-danger" onclick="myFunction()" value="Reset form">
+      </div>
+    </fieldset>
+    <section class="form-data"></section>
+    <script src="script.js"></script>
+      <script>
+        var picker = new Pikaday({ field: document.getElementById('datepicker') });
+    </script>
+      
+</html>
