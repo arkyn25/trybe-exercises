@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: grey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  p {
+    padding: 5px;
+    line-height: 1em;
+  }
+}
