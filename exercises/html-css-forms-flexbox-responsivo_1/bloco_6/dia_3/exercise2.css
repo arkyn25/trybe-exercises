@@ -7,7 +7,7 @@ html {
 
 @media screen and (max-width: 375px) {
   body {
-    background: grey;
+    background: lightgrey;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 10px
   }
@@ -29,5 +29,16 @@ html {
   }
   .container {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+  }
+  .container {
+    flex-wrap: nowrap;
   }
 }
