@@ -20,3 +20,14 @@ html {
     line-height: 1em;
   }
 }
+
+@media screen and (min-width: 600px) {
+  body {
+    background: lightgrey;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
