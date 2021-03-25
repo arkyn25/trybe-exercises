@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: lightgrey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  p {
+    padding: 5px;
+    line-height: 1em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: lightgrey;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+}

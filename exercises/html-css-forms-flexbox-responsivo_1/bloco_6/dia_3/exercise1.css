@@ -1,0 +1,43 @@
+body {
+  font: 1.2em/1.2 arial, sans-serif;
+  margin: 10px;
+}
+h1 {
+  font-size: x-small;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 20px;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: rgb(59, 153, 109);
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  figure {
+    float: left;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background:rgb(7, 7, 15);
+    font-size: 2em;
+    margin: 10px;
+    color: white;
+    max-width: 1100px;
+  }
+}
