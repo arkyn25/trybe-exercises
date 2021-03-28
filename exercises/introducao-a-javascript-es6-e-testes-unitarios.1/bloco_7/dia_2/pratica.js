@@ -73,6 +73,7 @@ console.log(person);
 
 const person = {
   name:'Roberto',
+  lastName: 'Silva'
 };
 
 const lastName = {
