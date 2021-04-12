@@ -296,4 +296,21 @@ const sumNumbers = (array) => array.reduce(sumPair, 0);
 console.log(sumNumbers(numbers)); // 152
 
 const result = [1, 2, 3, 4, 5].reduce((aculador, elemento) => aculador + elemento, 0);
-console.log(result)
+console.log(result);
+
+
+// enviar email com forEach
+const emailListInData = [
+  'roberta@email.com',
+  'paulo@email.com',
+  'anaroberta@email.com',
+  'fabiano@email.com',
+];
+
+const showEmailList = (email) => {
+  console.log(`O email ${email} esta cadastrado em nosso banco de dados!`);
+};
+
+emailListInData.forEach((item) => {
+  showEmailList(item)
+})
