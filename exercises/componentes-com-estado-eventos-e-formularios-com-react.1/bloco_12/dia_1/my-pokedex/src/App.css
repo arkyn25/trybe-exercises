@@ -16,12 +16,17 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .pokedex {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin: 10px 10px;
+  align-items: center;
+  
+}
+
+button {
+  background-color: lightblue;
+  border-radius: 4px;
 }
